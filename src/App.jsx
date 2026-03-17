@@ -19,6 +19,7 @@ function App() {
         <Route path="/about-gurukul" element={<AboutPage />} />
         <Route path="/members-area" element={<MembersPage />} />
         <Route path="/networking" element={<NetworkingPage />} />
+        <Route path="/contact-us" element={<ConnectPage />} />
         <Route path="/connect-us" element={<ConnectPage />} />
       </Routes>
       {!isHome && <Footer />}

@@ -18,7 +18,7 @@ export default function Objectives() {
   ]
 
   return (
-    <section className="min-h-[48vh] bg-[#ececec] px-6 pb-14 max-[860px]:min-h-0">
+    <section className="min-h-[56vh] bg-[#ececec] pt-[58px] px-6 pb-14 max-[860px]:min-h-0">
       <div className="mx-auto max-w-[1180px]">
         <div className="mt-[10px] grid gap-[14px]">
           {items.map((item, idx) => (
@@ -33,8 +33,8 @@ export default function Objectives() {
                 {idx + 1}
               </div>
               <div>
-                <h3 className="mb-[5px] text-lg font-semibold">{item.title}</h3>
-                <p className="text-sm leading-[1.45] text-[#505050]">{item.description}</p>
+                <h3 className="mb-[5px] text-lg font-semibold pb-[10px]">{item.title}</h3>
+                <p className="text-sm leading-[1.45] text-[#505050] pt-[10px]">{item.description}</p>
               </div>
             </div>
           ))}

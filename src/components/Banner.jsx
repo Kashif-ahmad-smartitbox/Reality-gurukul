@@ -4,7 +4,7 @@ export default function Banner() {
       <div className="max-w-[1180px]">
         <h2 className="text-center text-[clamp(42px,5.2vw,76px)] leading-[1.03] tracking-[0.3px] text-white">
           ENTER THE CIRCLE WHERE<br />
-          REAL ESTATE LEADERS ARE MADE
+          <span>REAL ESTATE LEADERS ARE MADE</span>
         </h2>
       </div>
     </section>

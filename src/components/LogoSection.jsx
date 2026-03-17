@@ -5,7 +5,7 @@ export default function LogoSection() {
       aria-label="Realty Gurukul logo section"
     >
       <div className="mx-auto flex w-full max-w-[1180px] justify-center">
-        <img src="/brand-mark.svg" alt="Realty Gurukul logo" className="w-[min(420px,72vw)]" />
+        <img src="/brand-mark.png" alt="Realty Gurukul logo" className="w-[min(420px,72vw)]" />
       </div>
     </section>
   )

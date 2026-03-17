@@ -7,7 +7,8 @@ import Steps from '../components/Steps'
 import Banner from '../components/Banner'
 import Community from '../components/Community'
 import LogoSection from '../components/LogoSection'
-import Contact from '../components/Contact'
+import FollowUs from '../components/FollowUs'
+import Footer from '../components/Footer'
 
 export default function HomePage() {
   const location = useLocation()
@@ -35,7 +36,8 @@ export default function HomePage() {
       <Banner />
       <Community />
       <LogoSection />
-      <Contact />
+      <FollowUs />
+      <Footer />
     </main>
   )
 }

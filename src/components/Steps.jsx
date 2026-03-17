@@ -24,12 +24,12 @@ export default function Steps() {
     <section className="min-h-[70vh] bg-[#ececec] px-6 pb-[70px] pt-20 max-[860px]:min-h-0">
       <div className="mx-auto max-w-[1180px] text-center">
         <h2 className="text-[clamp(42px,4.8vw,72px)] leading-[1.05]">
-          3 Steps to Become a Realty Gurukul
+          3 Steps to Become a <span className="text-[#fa6a21]">Realty Gurukul</span>
           <br />
           Member
         </h2>
-        <p className="mx-auto mb-[42px] mt-[18px] max-w-[720px] text-[15px] text-[#5f5f5f]">
-          Get connected with Realty Gurukul and experience the power of structured real estate growth
+        <p className="mx-auto mb-[42px] mt-[28px] max-w-[720px] text-[15px] text-[#5f5f5f]">
+          Get connected with <span className="text-[#fa6a21]">Realty Gurukul</span> and experience the power of structured real estate growth
           in action.
         </p>
 
@@ -49,7 +49,7 @@ export default function Steps() {
         </div>
 
         <button
-          className="mt-[30px] cursor-pointer rounded-full bg-[#fa6a21] px-[34px] py-[13px] text-xs font-bold tracking-[0.9px] text-white transition-colors hover:bg-[#eb5b15]"
+          className="mt-[50px] cursor-pointer rounded-full bg-[#fa6a21] px-[34px] py-[13px] text-xs font-bold tracking-[0.9px] text-white transition-colors hover:bg-[#eb5b15]"
           type="button"
         >
           GET CONNECTED

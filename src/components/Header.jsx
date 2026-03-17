@@ -58,14 +58,14 @@ export default function Header() {
             Networking
           </NavLink>
           <NavLink
-            to="/connect-us"
+            to="/contact-us"
             className={({ isActive }) =>
               `px-0 py-3 text-sm tracking-[0.5px] text-white transition-opacity hover:opacity-80 ${
                 isActive ? 'opacity-80' : ''
               }`
             }
           >
-            Connect Us
+            Contact Us
           </NavLink>
         </nav>
       </div>
