@@ -35,7 +35,7 @@ export default function Objectives() {
         {items.map((item) => (
           <div
             key={item.title}
-            className="flex flex-col gap-4 rounded-xl border border-[#ffe2cf] bg-[#fffdfb] px-4 py-5 shadow-sm transition hover:shadow-md sm:flex-row sm:gap-5 sm:px-6 sm:py-6"
+            className="flex flex-col items-center gap-4 rounded-xl border border-[#ffe2cf] bg-[#fffdfb] px-4 py-5 text-center shadow-sm transition hover:shadow-md sm:flex-row sm:items-start sm:gap-5 sm:px-6 sm:py-6 sm:text-left"
           >
 
             {/* ICON */}
@@ -49,13 +49,13 @@ export default function Objectives() {
                 {item.title}
               </h3>
 
-              <p className="mt-1 max-w-[900px] text-[clamp(0.95rem,2vw,1.125rem)] leading-[1.6] text-[#555]">
+              <p className="mt-1 max-w-[900px] text-justify text-[clamp(0.95rem,2vw,1.125rem)] leading-[1.6] text-[#555] sm:text-left">
                 {item.description}
               </p>
 
               {/* BULLETS ONLY FOR OBJECTIVE */}
               {item.points && (
-                <ul className="mt-2 list-disc space-y-1 pl-5 text-[clamp(0.95rem,2vw,1.125rem)] text-[#555]">
+                <ul className="mt-2 list-disc space-y-1 pl-5 text-left text-[clamp(0.95rem,2vw,1.125rem)] text-[#555]">
                   {item.points.map((point) => (
                     <li key={point}>{point}</li>
                   ))}

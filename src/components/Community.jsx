@@ -32,7 +32,7 @@ export default function Community() {
       id="community"
       className="min-h-[52vh] bg-white px-4 pb-12 pt-12 sm:px-6 sm:pb-16 sm:pt-14 lg:min-h-[64vh] lg:pb-[72px] lg:pt-[62px]"
     >
-      <div className="mx-auto max-w-[1180px]">
+      <div className="mx-auto max-w-[1180px] text-center sm:text-left">
         
         {/* Heading */}
         <h2 className="text-[clamp(1.8rem,4.3vw,3.5rem)] leading-[1.12]">
@@ -41,7 +41,7 @@ export default function Community() {
         </h2>
 
         {/* Subtext */}
-        <p className="mt-3 max-w-[760px] text-[clamp(0.98rem,2.2vw,1.125rem)] text-[#474747]">
+        <p className="mx-auto mt-3 max-w-[760px] text-justify text-[clamp(0.98rem,2.2vw,1.125rem)] text-[#474747] sm:mx-0 sm:text-left">
           Discover how Realty Gurukul professionals connect, collaborate, and close better opportunities through
           structured learning and powerful networking.
         </p>
