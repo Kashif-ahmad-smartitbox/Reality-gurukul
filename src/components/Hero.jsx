@@ -74,7 +74,7 @@ IS HERE`;
       {/* Skyline Background */}
       <div
         aria-label="City skyline background"
-        className="min-h-[36vh] bg-cover bg-center sm:min-h-[42vh] lg:min-h-[52vh]"
+        className="min-h-[36vh] bg-cover bg-center sm:min-h-[42vh] lg:min-h-[62vh]"
         style={{
           backgroundImage:
             "linear-gradient(to bottom, rgba(255,125,53,0.08), rgba(0,0,0,0.25)), url('/skyline.jpeg')",

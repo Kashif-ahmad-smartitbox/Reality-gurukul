@@ -15,12 +15,12 @@ export default function Contact() {
 
           <div className="border-2 border-[#fff1cd] rounded-xl bg-[rgba(255,255,255,0.1)] px-4 py-3">
             <h3 className="text-lg font-medium text-[black]">Email Address</h3>
-            <p className="mt-0.5 text-[clamp(1rem,2.2vw,1.25rem)] leading-[1.3] text-[#fa6a21]">hello@realtyrealsite.com</p>
+            <p className="mt-0.5 text-[clamp(1rem,2.2vw,1.25rem)] leading-[1.3] text-[#fa6a21]">info@realtygurukul.com</p>
           </div>
 
           <div className="border-2 border-[#fff1cd] rounded-xl bg-[rgba(255,255,255,0.1)] px-4 py-3">
             <h3 className="text-lg font-medium text-[black]">Phone Number</h3>
-            <p className="mt-0.5 text-[clamp(1rem,2.2vw,1.25rem)] leading-[1.3] text-[#fa6a21]">(123) 456-7890</p>
+            <p className="mt-0.5 text-[clamp(1rem,2.2vw,1.25rem)] leading-[1.3] text-[#fa6a21]">+91 88399 25211</p>
           </div>
         </div>
       </div>
