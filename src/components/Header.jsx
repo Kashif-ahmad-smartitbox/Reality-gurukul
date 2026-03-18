@@ -18,19 +18,19 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 bg-[#e3520a]">
-      <div className="mx-auto max-w-[1180px] px-6 py-[18px] max-[520px]:px-[14px] max-[520px]:py-[14px]">
-        <nav className="flex items-center justify-center gap-[34px] max-[860px]:justify-start max-[860px]:gap-[14px] max-[860px]:overflow-x-auto max-[860px]:pb-1">
+      <div className="mx-auto w-full max-w-[1180px] px-4 py-3 sm:px-6 sm:py-4">
+        <nav className="flex items-center justify-start gap-4 overflow-x-auto pb-1 text-nowrap md:justify-center md:gap-8">
           <button
             type="button"
             onClick={() => jumpTo('home')}
-            className="border-0 bg-transparent px-0 py-3 text-sm cursor-pointer tracking-[0.5px] text-white transition-opacity hover:opacity-80"
+            className="shrink-0 cursor-pointer border-0 bg-transparent px-0 py-2.5 text-sm tracking-[0.4px] text-white transition-opacity hover:opacity-80"
           >
             Home
           </button>
           <NavLink
             to="/about-gurukul"
             className={({ isActive }) =>
-              `px-0 py-3 text-sm tracking-[0.5px] text-white transition-opacity hover:opacity-80 ${
+              `shrink-0 px-0 py-2.5 text-sm tracking-[0.4px] text-white transition-opacity hover:opacity-80 ${
                 isActive ? 'opacity-80' : ''
               }`
             }
@@ -40,7 +40,7 @@ export default function Header() {
           <NavLink
             to="/members-area"
             className={({ isActive }) =>
-              `px-0 py-3 text-sm tracking-[0.5px] text-white transition-opacity hover:opacity-80 ${
+              `shrink-0 px-0 py-2.5 text-sm tracking-[0.4px] text-white transition-opacity hover:opacity-80 ${
                 isActive ? 'opacity-80' : ''
               }`
             }
@@ -50,7 +50,7 @@ export default function Header() {
           <NavLink
             to="/networking"
             className={({ isActive }) =>
-              `px-0 py-3 text-sm tracking-[0.5px] text-white transition-opacity hover:opacity-80 ${
+              `shrink-0 px-0 py-2.5 text-sm tracking-[0.4px] text-white transition-opacity hover:opacity-80 ${
                 isActive ? 'opacity-80' : ''
               }`
             }
@@ -60,7 +60,7 @@ export default function Header() {
           <NavLink
             to="/contact-us"
             className={({ isActive }) =>
-              `px-0 py-3 text-sm tracking-[0.5px] text-white transition-opacity hover:opacity-80 ${
+              `shrink-0 px-0 py-2.5 text-sm tracking-[0.4px] text-white transition-opacity hover:opacity-80 ${
                 isActive ? 'opacity-80' : ''
               }`
             }

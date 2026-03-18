@@ -30,37 +30,36 @@ export default function Community() {
   return (
     <section
       id="community"
-      className="min-h-[64vh] bg-white px-6 pb-[72px] pt-[62px] max-[860px]:min-h-0"
+      className="min-h-[52vh] bg-white px-4 pb-12 pt-12 sm:px-6 sm:pb-16 sm:pt-14 lg:min-h-[64vh] lg:pb-[72px] lg:pt-[62px]"
     >
       <div className="mx-auto max-w-[1180px]">
         
         {/* Heading */}
-        <h2 className="text-[clamp(34px,4.1vw,56px)] leading-[1.07]">
-          Join <span className="text-[#fa6a21]">Realty Gurukul</span> - The Emerging Real
-          <br />
-          Estate Growth Community
+        <h2 className="text-[clamp(1.8rem,4.3vw,3.5rem)] leading-[1.12]">
+          Join <span className="text-[#fa6a21]">Realty Gurukul</span> - The Emerging Real{' '}
+          <span className="block sm:inline">Estate Growth Community</span>
         </h2>
 
         {/* Subtext */}
-        <p className="mt-2.5 max-w-[760px] text-[13px] text-[#474747]">
+        <p className="mt-3 max-w-[760px] text-[clamp(0.98rem,2.2vw,1.125rem)] text-[#474747]">
           Discover how Realty Gurukul professionals connect, collaborate, and close better opportunities through
           structured learning and powerful networking.
         </p>
 
         {/* Section Title */}
-        <div className="mt-[42px]">
-          <h3 className="text-2xl font-semibold">
+        <div className="mt-9 sm:mt-10">
+          <h3 className="text-xl font-semibold sm:text-2xl">
             Realty Gurukul at a Glance
           </h3>
         </div>
 
         {/* Stats Grid */}
-        <div className="mt-[18px] grid grid-cols-5 gap-[14px] max-[1100px]:grid-cols-3 max-[860px]:grid-cols-2 max-[520px]:grid-cols-1">
+        <div className="mt-5 grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-4 lg:grid-cols-3 xl:grid-cols-5">
           
           {stats.map((stat) => (
             <div
               key={stat.label}
-              className="min-h-[160px] rounded-lg border border-[#f29d6a] bg-[#f8f8f8] px-4 py-5 text-center transition hover:shadow-md"
+              className="min-h-[150px] rounded-lg border border-[#f29d6a] bg-[#f8f8f8] px-4 py-4 text-center transition hover:shadow-md sm:min-h-[160px] sm:py-5"
             >
               {/* Number */}
               <div className="font-[Georgia,'Times_New_Roman',serif] text-[clamp(30px,2.4vw,40px)] leading-[1.1] text-[#fa6a21]">
@@ -68,12 +67,12 @@ export default function Community() {
               </div>
 
               {/* Label */}
-              <div className="mt-2 text-[12px] leading-[1.3] font-semibold text-[#5f5f5f]">
+              <div className="mt-2 text-sm font-semibold leading-[1.35] text-[#5f5f5f] sm:text-[15px]">
                 {stat.label}
               </div>
 
               {/* Description */}
-              <p className="mt-3 text-[11px] leading-[1.4] text-[#7a7a7a]">
+              <p className="mt-3 text-[13px] leading-[1.45] text-[#7a7a7a] sm:text-[14px]">
                 {stat.desc}
               </p>
             </div>

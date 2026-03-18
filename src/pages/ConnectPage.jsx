@@ -10,17 +10,17 @@ import {
 
 export default function ConnectPage() {
   return (
-    <main className="bg-white pb-10">
+    <main className="bg-white pb-10 sm:pb-12">
 
       {/* 🔥 HERO WITH CURVE */}
-      <section className="bg-[#fa6a21] px-6 pt-14 pb-20 text-center relative">
+      <section className="relative bg-[#fa6a21] px-4 pb-10 pt-8 text-center sm:px-6 sm:pb-12 sm:pt-10">
         <div className="mx-auto max-w-[1180px]">
           
           <p className="text-[12px] font-semibold uppercase tracking-[1.2px] text-[#ffe3ce]">
             Get In Touch
           </p>
 
-          <h1 className="mt-2 text-[clamp(28px,4vw,48px)] font-semibold text-white">
+          <h1 className="mt-2 text-[clamp(1.9rem,4.5vw,3rem)] font-semibold text-white">
             Contact Us
           </h1>
 
@@ -30,7 +30,7 @@ export default function ConnectPage() {
         {/* 🔥 CURVED DIVIDER */}
         <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-[0]">
           <svg
-            className="relative block w-full h-[60px]"
+            className="relative block h-[44px] w-full sm:h-[60px]"
             viewBox="0 0 1440 100"
             preserveAspectRatio="none"
           >
@@ -43,63 +43,63 @@ export default function ConnectPage() {
       </section>
 
       {/* 🔥 CARDS SECTION */}
-      <section className="mx-auto max-w-[1180px] px-6 pt-10">
+      <section className="mx-auto max-w-[1180px] px-4 pt-8 sm:px-6 sm:pt-10">
 
-        <div className="grid gap-6 md:grid-cols-3">
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-5 lg:grid-cols-3 lg:gap-6">
 
           {/* Website */}
-          <div className="rounded-2xl border border-[#ffe2cf] bg-[#fffdfb] px-6 py-7 text-center transition hover:-translate-y-1 hover:shadow-lg">
-            <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-[#fff3e8] text-[#fa6a21]">
+          <div className="rounded-2xl border border-[#ffe2cf] bg-[#fffdfb] px-5 py-6 text-center transition hover:-translate-y-1 hover:shadow-lg sm:px-6 sm:py-7">
+            <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-[#fff3e8] text-[#fa6a21] sm:h-14 sm:w-14">
               <Globe size={22} />
             </div>
 
-            <h2 className="mt-5 text-[16px] font-semibold text-[#a14607]">
+            <h2 className="mt-4 text-[15px] font-semibold text-[#a14607] sm:mt-5 sm:text-[16px]">
               Visit Website
             </h2>
 
-            <p className="mt-1 text-[13px] text-[#6f4628]">
+            <p className="mt-1 text-xs text-[#6f4628] sm:text-[13px]">
               www.realtygurukul.com
             </p>
 
-            <p className="mt-2 text-[12px] text-[#9f6a45]">
+            <p className="mt-2 text-[11px] text-[#9f6a45] sm:text-[12px]">
               Explore our platform
             </p>
           </div>
 
           {/* Email */}
-          <div className="rounded-2xl border border-[#ffe2cf] bg-[#fffdfb] px-6 py-7 text-center transition hover:-translate-y-1 hover:shadow-lg">
-            <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-[#fff3e8] text-[#fa6a21]">
+          <div className="rounded-2xl border border-[#ffe2cf] bg-[#fffdfb] px-5 py-6 text-center transition hover:-translate-y-1 hover:shadow-lg sm:px-6 sm:py-7">
+            <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-[#fff3e8] text-[#fa6a21] sm:h-14 sm:w-14">
               <Mail size={22} />
             </div>
 
-            <h2 className="mt-5 text-[16px] font-semibold text-[#a14607]">
+            <h2 className="mt-4 text-[15px] font-semibold text-[#a14607] sm:mt-5 sm:text-[16px]">
               Email Us
             </h2>
 
-            <p className="mt-1 text-[13px] text-[#6f4628]">
+            <p className="mt-1 text-xs text-[#6f4628] sm:text-[13px]">
               info@realtygurukul.com
             </p>
 
-            <p className="mt-2 text-[12px] text-[#9f6a45]">
+            <p className="mt-2 text-[11px] text-[#9f6a45] sm:text-[12px]">
               We reply within 24 hours
             </p>
           </div>
 
           {/* Phone */}
-          <div className="rounded-2xl border border-[#ffe2cf] bg-[#fffdfb] px-6 py-7 text-center transition hover:-translate-y-1 hover:shadow-lg">
-            <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-[#fff3e8] text-[#fa6a21]">
+          <div className="rounded-2xl border border-[#ffe2cf] bg-[#fffdfb] px-5 py-6 text-center transition hover:-translate-y-1 hover:shadow-lg sm:px-6 sm:py-7">
+            <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-[#fff3e8] text-[#fa6a21] sm:h-14 sm:w-14">
               <Phone size={22} />
             </div>
 
-            <h2 className="mt-5 text-[16px] font-semibold text-[#a14607]">
+            <h2 className="mt-4 text-[15px] font-semibold text-[#a14607] sm:mt-5 sm:text-[16px]">
               Call Us
             </h2>
 
-            <p className="mt-1 text-[13px] text-[#6f4628]">
+            <p className="mt-1 text-xs text-[#6f4628] sm:text-[13px]">
               +91 88399 25211
             </p>
 
-            <p className="mt-2 text-[12px] text-[#9f6a45]">
+            <p className="mt-2 text-[11px] text-[#9f6a45] sm:text-[12px]">
               Mon–Fri, 9am – 6pm
             </p>
           </div>
@@ -107,7 +107,7 @@ export default function ConnectPage() {
         </div>
 
         {/* 🔥 SOCIAL */}
-        <section className="mt-12 text-center">
+        <section className="mt-10 text-center sm:mt-12">
           <p className="text-[12px] font-semibold uppercase tracking-[1.2px] text-[#c55a17]">
             Connect On Social Media
           </p>

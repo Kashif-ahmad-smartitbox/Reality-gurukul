@@ -2,17 +2,19 @@ export default function About() {
   return (
     <section
       id="about"
-      className="grid min-h-[57vh] items-center bg-white px-6 py-[58px] max-[860px]:min-h-0"
+      className="grid min-h-[44vh] items-center bg-white px-4 py-12 sm:px-6 sm:py-14 lg:min-h-[57vh]"
     >
       <div className="mx-auto w-full max-w-[1180px]">
-        <div className="grid grid-cols-[300px_1fr] items-start gap-[42px] max-[860px]:grid-cols-1">
-          <h2 className="text-[clamp(32px,5.3vw,62px)] leading-[0.95] tracking-[0.3px] text-[black]">
-            ABOUT
-            <br />
-            <span className="inline-block text-[#fa6a21]">REALTY GURUKUL</span>
+        <div className="grid grid-cols-1 items-start gap-8 lg:grid-cols-[280px_1fr] lg:gap-10">
+          {/* LEFT */}
+          <h2 className="text-[clamp(1.8rem,4.8vw,3rem)] leading-[1.05] tracking-[0.3px] text-black">
+            <span className="block">ABOUT</span>
+            <span className="block text-[#fa6a21]">REALTY GURUKUL</span>
           </h2>
-          <p className="max-w-[860px] text-[22px] leading-[1.4] text-[#3d3d3d]">
-            <span className="inline-block text-[#fa6a21]">Realty Gurukul</span>{" "}
+
+          {/* RIGHT */}
+          <p className="max-w-[900px] text-[clamp(1rem,2.4vw,1.25rem)] leading-[1.6] text-[#3d3d3d]">
+            <span className="font-medium text-[#fa6a21]">Realty Gurukul</span>{" "}
             is a professional real estate community focused on education,
             ethical practices, and collaborative growth. It connects brokers,
             builders, and investors through structured training, verified

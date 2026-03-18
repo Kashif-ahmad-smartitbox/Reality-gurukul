@@ -25,47 +25,47 @@ IS HERE`;
   return (
     <section
       id="home"
-      className="overflow-hidden"
+      className="scroll-mt-20 overflow-hidden sm:scroll-mt-24"
       style={{
         background: "linear-gradient(to bottom, #fa6a21 60%, #ffe0cc 100%)",
       }}
     >
-      <div className="mx-auto grid min-h-[75vh] max-w-[1180px] items-center px-6 pb-25 pt-[70px] max-[860px]:min-h-0 max-[860px]:pt-[34px]">
-        <div className="grid grid-cols-[minmax(320px,1fr)_minmax(320px,500px)] items-center gap-[34px] max-[860px]:grid-cols-1">
+      <div className="mx-auto grid min-h-[70vh] max-w-[1180px] items-center px-4 pb-12 pt-4 sm:px-6 sm:pt-8 lg:min-h-[75vh] lg:pb-16 lg:pt-10">
+        <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(320px,500px)] lg:gap-10">
           {/* LEFT SIDE */}
           <div>
             <div className="relative">
               {/* Invisible text (prevents layout shift) */}
-              <h1 className="whitespace-pre-line text-[60px] font-semibold leading-[1.3] tracking-[0.4px] text-white opacity-0 pointer-events-none">
-                THE FUTURE OF REAL ESTATE NETWORKING IS HERE
+              <h1 className="pointer-events-none whitespace-pre-line text-[clamp(2rem,7.5vw,3.75rem)] font-semibold leading-[1.15] tracking-[0.4px] text-white opacity-0">
+                {fullText}
               </h1>
 
               {/* Animated text */}
-              <h1 className="absolute top-0 left-0 whitespace-pre-line text-[60px] font-semibold leading-[1.3] tracking-[0.4px] text-white">
+              <h1 className="absolute left-0 top-0 whitespace-pre-line text-[clamp(2rem,7.5vw,3.75rem)] font-semibold leading-[1.15] tracking-[0.4px] text-white">
                 {displayedText}
 
                 {/* Arrow appears after typing */}
                 {displayedText === fullText && (
-                  <span className="inline-flex items-center justify-center ml-4 w-22 h-12 rounded-xl bg-white align-baseline relative -top-1 animate-fadeIn">
+                  <span className="relative -top-1 ml-2 inline-flex h-10 w-14 items-center justify-center rounded-lg bg-white align-baseline sm:ml-3 sm:h-11 sm:w-16 sm:rounded-xl lg:ml-4 lg:h-12 lg:w-20 animate-fadeIn">
                     {" "}
-                    <ArrowRight className="w-10 h-10 text-[#fa6a21]" />
+                    <ArrowRight className="h-6 w-6 text-[#fa6a21] sm:h-7 sm:w-7 lg:h-8 lg:w-8" />
                   </span>
                 )}
               </h1>
             </div>
 
-            <p className="mt-[42px] max-w-[500px] text-[25px] leading-[1.25] text-white max-[1100px]:text-[22px]">
+            <p className="mt-8 max-w-[450px] text-[clamp(1.05rem,2.7vw,1.5rem)] leading-[1.35] text-white">
               Structured learning, verified opportunities, and powerful
               networking, all in one ecosystem.
             </p>
           </div>
 
           {/* RIGHT SIDE (LOGO) */}
-          <div className="flex justify-center max-[860px]:justify-start">
+          <div className="flex justify-center lg:justify-end">
             <img
               src="/brand-mark.png"
               alt="Realty Gurukul brand mark"
-              className="w-[min(100%,500px)] drop-shadow-[0_7px_10px_rgba(0,0,0,0.2)] animate-zoom"
+              className="w-[min(100%,420px)] sm:w-[min(100%,460px)] lg:w-[min(100%,500px)] drop-shadow-[0_7px_10px_rgba(0,0,0,0.2)] animate-zoom"
             />
           </div>
         </div>
@@ -74,7 +74,7 @@ IS HERE`;
       {/* Skyline Background */}
       <div
         aria-label="City skyline background"
-        className="min-h-[70vh] bg-cover bg-center max-[520px]:min-h-[230px]"
+        className="min-h-[36vh] bg-cover bg-center sm:min-h-[42vh] lg:min-h-[52vh]"
         style={{
           backgroundImage:
             "linear-gradient(to bottom, rgba(255,125,53,0.08), rgba(0,0,0,0.25)), url('/skyline.jpeg')",

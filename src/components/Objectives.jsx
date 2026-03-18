@@ -29,30 +29,33 @@ export default function Objectives() {
   ];
 
   return (
-    <section className="min-h-[56vh] bg-white px-6 py-[58px] max-[860px]:min-h-0">
-      <div className="mx-auto max-w-[1180px] space-y-10">
+    <section className="min-h-[50vh] bg-white px-4 py-12 sm:px-6 sm:py-14 lg:min-h-[56vh]">
+      <div className="mx-auto max-w-[1180px] space-y-5 sm:space-y-6">
 
         {items.map((item) => (
-          <div key={item.title} className="flex gap-5 items-start">
+          <div
+            key={item.title}
+            className="flex flex-col gap-4 rounded-xl border border-[#ffe2cf] bg-[#fffdfb] px-4 py-5 shadow-sm transition hover:shadow-md sm:flex-row sm:gap-5 sm:px-6 sm:py-6"
+          >
 
             {/* ICON */}
-            <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#fa6a21] text-white shadow-sm">
+            <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[#fa6a21] text-white sm:h-12 sm:w-12">
               {item.icon}
             </div>
 
             {/* CONTENT */}
             <div>
-              <h3 className="text-[20px] font-semibold text-black">
+              <h3 className="text-xl font-semibold text-black sm:text-[22px]">
                 {item.title}
               </h3>
 
-              <p className="mt-1 text-[14px] leading-[1.6] text-[#555] max-w-[900px]">
+              <p className="mt-1 max-w-[900px] text-[clamp(0.95rem,2vw,1.125rem)] leading-[1.6] text-[#555]">
                 {item.description}
               </p>
 
               {/* BULLETS ONLY FOR OBJECTIVE */}
               {item.points && (
-                <ul className="mt-2 list-disc pl-5 text-[14px] text-[#555] space-y-1">
+                <ul className="mt-2 list-disc space-y-1 pl-5 text-[clamp(0.95rem,2vw,1.125rem)] text-[#555]">
                   {item.points.map((point) => (
                     <li key={point}>{point}</li>
                   ))}

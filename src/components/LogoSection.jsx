@@ -1,7 +1,7 @@
 export default function LogoSection() {
   return (
     <section
-      className="grid min-h-[42vh] items-center bg-white px-6 py-6 max-[860px]:min-h-0"
+      className="grid min-h-[50vh] items-center bg-white px-3 py-4 sm:min-h-[56vh] sm:px-4 sm:py-6 lg:min-h-[60vh] lg:px-6 lg:py-8"
       aria-label="Realty Gurukul logo section"
     >
       <div className="mx-auto flex w-full max-w-[1180px] justify-center">
@@ -9,7 +9,7 @@ export default function LogoSection() {
         <img
           src="/brand-mark.png"
           alt="Realty Gurukul logo"
-          className="w-[min(420px,72vw)] drop-shadow-[0_10px_20px_rgba(0,0,0,0.15)] animate-logoZoom"
+          className="w-[clamp(280px,92vw,560px)] sm:w-[clamp(380px,80vw,760px)] lg:w-[clamp(420px,42vw,700px)] drop-shadow-[0_10px_20px_rgba(0,0,0,0.15)] animate-logoZoom"
         />
 
       </div>
