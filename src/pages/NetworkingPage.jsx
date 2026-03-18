@@ -15,7 +15,7 @@ const tracks = [
 
 export default function NetworkingPage() {
   return (
-    <main className="min-h-[calc(100vh-45px)] bg-[#ececec] px-6 pb-[52px] pt-[38px] max-[520px]:px-4">
+    <main className="min-h-[calc(100vh-45px)] bg-white px-6 pb-[52px] pt-[38px] max-[520px]:px-4">
       <section className="mx-auto max-w-[1180px]">
         <p className="text-xs font-bold tracking-[1px] text-[#fa6a21]">NETWORKING</p>
         <h1 className="mt-[10px] text-[clamp(34px,4vw,56px)] leading-[1.07]">Real Relationships. Shared Momentum. Better Outcomes.</h1>

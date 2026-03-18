@@ -12,9 +12,10 @@ export default function ConnectPage() {
   return (
     <main className="bg-white pb-10">
 
-      {/* HERO */}
-      <section className="bg-[#fa6a21] px-6 pt-12">
-        <div className="mx-auto max-w-[1180px] text-center">
+      {/* 🔥 HERO WITH CURVE */}
+      <section className="bg-[#fa6a21] px-6 pt-14 pb-20 text-center relative">
+        <div className="mx-auto max-w-[1180px]">
+          
           <p className="text-[12px] font-semibold uppercase tracking-[1.2px] text-[#ffe3ce]">
             Get In Touch
           </p>
@@ -25,23 +26,38 @@ export default function ConnectPage() {
 
           <div className="mx-auto mt-4 h-[3px] w-16 rounded-full bg-[#ffd4af]" />
         </div>
+
+        {/* 🔥 CURVED DIVIDER */}
+        <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-[0]">
+          <svg
+            className="relative block w-full h-[60px]"
+            viewBox="0 0 1440 100"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M0,40 C300,100 1100,0 1440,60 L1440,100 L0,100 Z"
+              fill="#ffffff"
+            />
+          </svg>
+        </div>
       </section>
 
-      {/* CARDS */}
-      <section className="mx-auto -mt-6 max-w-[1180px] px-6">
-        <div className="grid gap-5 md:grid-cols-3">
+      {/* 🔥 CARDS SECTION */}
+      <section className="mx-auto max-w-[1180px] px-6 pt-10">
+
+        <div className="grid gap-6 md:grid-cols-3">
 
           {/* Website */}
-          <div className="rounded-xl border border-[#ffd9bd] bg-[#fffdfb] px-5 py-6 text-center transition hover:shadow-md">
-            <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-[#fff3e8] text-[#fa6a21]">
+          <div className="rounded-2xl border border-[#ffe2cf] bg-[#fffdfb] px-6 py-7 text-center transition hover:-translate-y-1 hover:shadow-lg">
+            <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-[#fff3e8] text-[#fa6a21]">
               <Globe size={22} />
             </div>
 
-            <h2 className="mt-4 text-[18px] font-semibold text-[#a14607]">
+            <h2 className="mt-5 text-[16px] font-semibold text-[#a14607]">
               Visit Website
             </h2>
 
-            <p className="mt-1 text-[14px] font-medium text-[#6f4628]">
+            <p className="mt-1 text-[13px] text-[#6f4628]">
               www.realtygurukul.com
             </p>
 
@@ -51,16 +67,16 @@ export default function ConnectPage() {
           </div>
 
           {/* Email */}
-          <div className="rounded-xl border border-[#ffd9bd] bg-[#fffdfb] px-5 py-6 text-center transition hover:shadow-md">
-            <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-[#fff3e8] text-[#fa6a21]">
+          <div className="rounded-2xl border border-[#ffe2cf] bg-[#fffdfb] px-6 py-7 text-center transition hover:-translate-y-1 hover:shadow-lg">
+            <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-[#fff3e8] text-[#fa6a21]">
               <Mail size={22} />
             </div>
 
-            <h2 className="mt-4 text-[18px] font-semibold text-[#a14607]">
+            <h2 className="mt-5 text-[16px] font-semibold text-[#a14607]">
               Email Us
             </h2>
 
-            <p className="mt-1 text-[14px] font-medium text-[#6f4628]">
+            <p className="mt-1 text-[13px] text-[#6f4628]">
               info@realtygurukul.com
             </p>
 
@@ -70,16 +86,16 @@ export default function ConnectPage() {
           </div>
 
           {/* Phone */}
-          <div className="rounded-xl border border-[#ffd9bd] bg-[#fffdfb] px-5 py-6 text-center transition hover:shadow-md">
-            <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-[#fff3e8] text-[#fa6a21]">
+          <div className="rounded-2xl border border-[#ffe2cf] bg-[#fffdfb] px-6 py-7 text-center transition hover:-translate-y-1 hover:shadow-lg">
+            <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-[#fff3e8] text-[#fa6a21]">
               <Phone size={22} />
             </div>
 
-            <h2 className="mt-4 text-[18px] font-semibold text-[#a14607]">
+            <h2 className="mt-5 text-[16px] font-semibold text-[#a14607]">
               Call Us
             </h2>
 
-            <p className="mt-1 text-[14px] font-medium text-[#6f4628]">
+            <p className="mt-1 text-[13px] text-[#6f4628]">
               +91 88399 25211
             </p>
 
@@ -90,8 +106,8 @@ export default function ConnectPage() {
 
         </div>
 
-        {/* SOCIAL */}
-        <section className="mt-10 text-center">
+        {/* 🔥 SOCIAL */}
+        <section className="mt-12 text-center">
           <p className="text-[12px] font-semibold uppercase tracking-[1.2px] text-[#c55a17]">
             Connect On Social Media
           </p>

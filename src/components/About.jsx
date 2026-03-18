@@ -2,7 +2,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="grid min-h-[57vh] items-center bg-[#ececec] px-6 py-[58px] max-[860px]:min-h-0"
+      className="grid min-h-[57vh] items-center bg-white px-6 py-[58px] max-[860px]:min-h-0"
     >
       <div className="mx-auto w-full max-w-[1180px]">
         <div className="grid grid-cols-[300px_1fr] items-start gap-[42px] max-[860px]:grid-cols-1">

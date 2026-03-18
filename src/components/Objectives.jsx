@@ -29,7 +29,7 @@ export default function Objectives() {
   ];
 
   return (
-    <section className="min-h-[56vh] bg-[#ececec] px-6 py-[58px] max-[860px]:min-h-0">
+    <section className="min-h-[56vh] bg-white px-6 py-[58px] max-[860px]:min-h-0">
       <div className="mx-auto max-w-[1180px] space-y-10">
 
         {items.map((item) => (

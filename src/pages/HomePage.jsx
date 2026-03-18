@@ -10,6 +10,7 @@ import LogoSection from '../components/LogoSection'
 import FollowUs from '../components/FollowUs'
 import ConnectPage from './ConnectPage'
 import Footer from '../components/Footer'
+import Contact from '../components/Contact'
 
 export default function HomePage() {
   const location = useLocation()
@@ -39,6 +40,7 @@ export default function HomePage() {
       <LogoSection />
       <ConnectPage />
       <FollowUs />      
+      <Contact />
       <Footer />
     </main>
   )

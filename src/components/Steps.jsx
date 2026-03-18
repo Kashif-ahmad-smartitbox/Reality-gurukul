@@ -24,7 +24,7 @@ export default function Steps() {
   ]
 
   return (
-    <section className="min-h-[70vh] bg-[#ececec] px-6 pb-[70px] pt-20 max-[860px]:min-h-0">
+    <section className="min-h-[70vh] bg-white px-6 pb-[70px] pt-20 max-[860px]:min-h-0">
       <div className="mx-auto max-w-[1180px] text-center">
 
         {/* Heading */}

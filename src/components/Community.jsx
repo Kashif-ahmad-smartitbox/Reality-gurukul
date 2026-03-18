@@ -30,7 +30,7 @@ export default function Community() {
   return (
     <section
       id="community"
-      className="min-h-[64vh] bg-[#ececec] px-6 pb-[72px] pt-[62px] max-[860px]:min-h-0"
+      className="min-h-[64vh] bg-white px-6 pb-[72px] pt-[62px] max-[860px]:min-h-0"
     >
       <div className="mx-auto max-w-[1180px]">
         
