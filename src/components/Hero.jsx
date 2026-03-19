@@ -1,5 +1,6 @@
 import { ArrowRight } from "lucide-react";
 import { useEffect, useState } from "react";
+import HeroFloatingLayer from "./HeroFloatingLayer";
 
 export default function Hero() {
   const fullText = `THE FUTURE OF
@@ -31,7 +32,9 @@ IS HERE`;
       }}
     >
       <div className="mx-auto grid min-h-[70vh] max-w-[1180px] items-center px-4 pb-8 pt-4 sm:px-6 sm:pb-12 sm:pt-8 lg:min-h-[75vh] lg:pb-16 lg:pt-10">
-        <div className="grid grid-cols-1 items-center gap-4 sm:gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(320px,500px)] lg:gap-10">
+        <div className="relative grid grid-cols-1 items-center gap-4 sm:gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(320px,500px)] lg:gap-10">
+          <HeroFloatingLayer />
+
           {/* LEFT SIDE */}
           <div className="text-center sm:text-left">
             <div className="relative">
@@ -61,7 +64,7 @@ IS HERE`;
           </div>
 
           {/* RIGHT SIDE (LOGO) */}
-          <div className="flex flex-col items-center justify-center gap-2 sm:gap-4 lg:items-end lg:justify-end">
+          <div className="relative z-30 flex flex-col items-center justify-center gap-2 sm:gap-4 lg:items-end lg:justify-end">
             <img
               src="/brand-mark.png"
               alt="Realty Gurukul brand mark"
