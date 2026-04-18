@@ -136,7 +136,7 @@ export default function MembersPage() {
       <section className="mx-auto max-w-[1180px]">
         <p className="text-xs font-bold tracking-[1px] text-[#fa6a21]">REALTY GURUKUL MEMBERSHIP FORM</p>
         <h1 className="mt-[10px] max-w-[760px] text-[clamp(1.95rem,4vw,3.5rem)] leading-[1.08]">
-          Join the Circle of Serious Real Estate Professionals
+          <strong>Join</strong> the Circle of Serious Real Estate Professionals
         </h1>
         <p className="mt-[14px] max-w-[760px] text-[clamp(1rem,2.2vw,1.125rem)] leading-[1.6] text-[#515151]">
           Learn. Connect. Grow. Become a part of Realty Gurukul and elevate your real estate journey.
