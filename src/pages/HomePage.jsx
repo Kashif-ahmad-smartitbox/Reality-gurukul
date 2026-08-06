@@ -9,7 +9,6 @@ import Community from '../components/Community'
 import LogoSection from '../components/LogoSection'
 import FollowUs from '../components/FollowUs'
 import ConnectPage from './ConnectPage'
-import Footer from '../components/Footer'
 import Contact from '../components/Contact'
 import MembershipForm from '../components/MembershipForm'
 
@@ -57,7 +56,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-      <Footer />
     </main>
   )
 }
